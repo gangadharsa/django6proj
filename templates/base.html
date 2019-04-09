@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css"/>
+    <meta charset="UTF-8">
+    <title>
+     {% block title %}
+        My amazing site
+        {% endblock %}
+    </title>
+</head>
+<body bgcolor="#8a2be2">
+<div id="sidebar">
+    {% block sidebar %}
+    <ul>
+        <li><a href="/">Home</a> </li>
+        <li><a href="/">Blog</a> </li>
+    </ul>
+    {% endblock %}
+</div>
+<div id="content">
+    {% block content %}
+    {% endblock %}
+</div>
+
+</body>
+</html>
